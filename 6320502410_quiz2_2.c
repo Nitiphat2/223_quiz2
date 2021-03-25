@@ -14,17 +14,40 @@ int main()
     int max=0;
     for(i=0;i<m;i++)
     {
-        if(max<a[i][1])
+        if(max<a[i][0])
         {
-            max = a[i][1];
+            max = a[i][0];
         }
     }
-    int x[max][70]
+    int x[max][70],b;
+    for(i=0;i<m;i++)
+    {
+        for(j=0;j<70;j++)
+        {
+            if(j == a[i][1])
+            {
+                for(k=0;k<a[i][2];k++)
+                {
+                    b = a[i][0]-1;
+                    x[b][j]=1;
+                    j++;
+                }
+            }
+        }
+    }
     for(i=0;i<max;i++)
     {
-        for(j=0;j<n;j++)
+        for(j=0;j<70;j++)
         {
-            scanf("%d",&a[i][j]);
+            if(j==1)
+            {
+                printf("x");
+            }
+            else
+            {
+                printf("o");
+            }
         }
+        printf("\n");
     }
 }

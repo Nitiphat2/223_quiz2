@@ -3,24 +3,16 @@ int main()
 {
     int n,m;
     scanf("%d%d",&n,&m);
-    int a[m][n],i,j,k;
+    int a[m][3],i,j,k;
     for(i=0;i<m;i++)
     {
-        for(j=0;j<n;j++)
+        for(j=0;j<3;j++)
         {
             scanf("%d",&a[i][j]);
         }
     }
-    int max=0;
-    for(i=0;i<m;i++)
-    {
-        if(max<a[i][0])
-        {
-            max = a[i][0];
-        }
-    }
-    int x[max][70],b,h,z;
-    for(i=0;i<max;i++)
+    int x[n][70],b,h,z;
+    for(i=0;i<n;i++)
     {
         for(j=0;j<70;j++)
         {
@@ -44,7 +36,7 @@ int main()
             }
         }
     }
-    for(i=0;i<max;i++)
+    for(i=0;i<n;i++)
     {
         for(j=0;j<70;j++)
         {

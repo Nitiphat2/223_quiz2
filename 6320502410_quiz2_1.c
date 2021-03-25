@@ -12,6 +12,14 @@ int main()
         }
         i++;
     }
+    while((i*i*i)<=n)
+    {
+        if((i*i*i)==n)
+        {
+            j=1;
+        }
+        i++;
+    }
     if(n==1||j==0)
     {
         printf("%d",n);

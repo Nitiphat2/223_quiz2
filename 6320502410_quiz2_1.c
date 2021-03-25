@@ -22,10 +22,10 @@ int main()
     while(a<=n)
     {
         k++;
-        i++;printf("%d %d\n",k,a);
+        i++;
         a=i*i*i;
     }
-    if(n==1||j==0)
+    if(j==0)
     {
         printf("%d",n-k);
     }

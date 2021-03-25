@@ -17,7 +17,7 @@ int main()
         }
     }
     i=2;
-    while(i<=n)
+    while(i<=n/2)
     {
         for(l=i*i*i;l<=n;l++)
         {

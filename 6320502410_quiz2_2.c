@@ -19,7 +19,7 @@ int main()
             max = a[i][0];
         }
     }
-    int x[max][70],b,h;
+    int x[max][70],b,h,z;
     for(i=0;i<max;i++)
     {
         for(j=0;j<70;j++)
@@ -33,9 +33,10 @@ int main()
         {
             if(j == a[i][1])
             {
-                h=j-1;
+                h = j-1;
                 b = a[i][0]-1;
-                for(k=0;k<a[i][2];k++)
+                z = a[i][2];
+                for(k=0;k<z;k++)
                 {
                     x[b][h]=1;
                     h++;
@@ -58,4 +59,5 @@ int main()
         }
         printf("\n");
     }
+    return 0;
 }

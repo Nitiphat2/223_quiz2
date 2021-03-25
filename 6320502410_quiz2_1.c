@@ -3,19 +3,23 @@ int main()
 {
     int n;
     scanf("%d",&n);
-    int i=2,j=0,k=0,l;
-    while((i*i*i)<=n)
+    int i=2,j=0,k=0,l,a;
+    while(a<=n)
     {
-        if((i*i*i)==n)
+        a=i*i*i;
+        if(a==n)
         {
             j=1;
         }
-        i++;
+        if(a<=n)
+        {
+            i++;
+        }
     }
     i=2;
     while(i<=n)
     {
-        for(l=0;l<=n;l++)
+        for(l=i*i*i;l<=n;l++)
         {
             if((i*i*i)==l)
             {
@@ -29,7 +33,7 @@ int main()
     {
         printf("%d",n-k);
     }
-    else
+    else if(j==1)
     {
         printf("Not Cube Free");
     }

@@ -3,7 +3,7 @@ int main()
 {
     int n;
     scanf("%d",&n);
-    int i=2,j=0,k=1;
+    int i=2,j=0,k=0,l;
     while((i*i*i)<=n)
     {
         if((i*i*i)==n)
@@ -13,18 +13,21 @@ int main()
         i++;
     }
     i=2;
-    while(k<=n)
+    while(i<=n)
     {
-        if((i*i*i)!=n)
+        for(l=0;l<=n;l++)
         {
-            k++;
+            if((i*i*i)==l)
+            {
+                k++;
+            }
         }
         i++;
 
     }
     if(n==1||j==0)
     {
-        printf("%d",k);
+        printf("%d",n-k);
     }
     else
     {

@@ -21,7 +21,7 @@ int main()
                 c=c*10;
             }
             z=x%10;
-            x=x/10
+            x=x/10;
             a = a + (z*c);
         }
         if(a == i)
